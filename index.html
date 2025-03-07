@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi CV</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        .container { max-width: 600px; margin: auto; padding: 20px; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Juan Antonio Ramírez Aguilar</h1>
-        <p>Ingeniero en Informatica | Programador</p>
-        <hr>
-        <h2>Sobre mí</h2>
-        <p>Breve descripción de tu experiencia y habilidades.</p>
-        <h2>Contacto</h2>
-        <p>Email: ing.jramirez@proton.me</p>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi CV</title>
+        <style>
+            body { font-family: Arial, sans-serif; text-align: center; }
+            td {
+                border-radius: 2px;
+                border-color: black;
+                border-style:double;
+            }
+            #img_perfil img {
+                width: 200px;
+
+            }
+        </style>
+    </head>
+    <body>
+
+        <table>
+            <tr>
+                <td>
+                    <section class="perfil">
+                        <div class="perfil-div" id="img_perfil">
+                            <img src="/src/IMG_20231112_170126734_HDR.jpg" alt="perfil_image">
+                        </div>
+                        <div class="perfil-div" id="name">name</div>
+                        <div class="perfil-div" id="info">info</div>
+                        <div class="perfil-div" id="info">skills</div>
+                    </section>
+                </td>
+
+                <td>
+                    <section class="sumary">
+                        <div class="summary-div" id="summary">Sumario</div>
+                        <div class="summary-div" id="experience">Experience</div>
+                    </section>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </body>
 </html>
