@@ -4,21 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi CV</title>
-        <style>
-            body { font-family: Arial, sans-serif; text-align: center; }
-            td {
-                border-radius: 2px;
-                border-color: black;
-                border-style:double;
-            }
-            #img_perfil img {
-                width: 200px;
 
-            }
-        </style>
-
-        
-        <!-- Script de Google Analytics -->
+        <!-- Google Analytics Script -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q000M0H8KF"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -28,32 +15,31 @@
         gtag('config', 'G-Q000M0H8KF');
         </script>
 
+        <!-- Lato Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+        <!-- CSS file-->
+        <link rel="stylesheet" href="styles/perfil.css">
     </head>
+    
     <body>
+        <!-- Contain all CV in the div -->
+        <div class="cv-container">
+            <section class="left-section">
+                <div class="profile-picture">
+                    <img src="src/prueba.jpg" alt="profile_picture">
+                </div>
+                <div class="name">Nombre Apellido</div>
+                <div class="contact-info">Informacion de contacto</div>
+                <div class="skills">Habilidades tecnicas</div>
+            </section>
 
-        <table>
-            <tr>
-                <td>
-                    <section class="perfil">
-                        <div class="perfil-div" id="img_perfil">
-                            <img src="src/prueba.jpg" alt="perfil_image">
-                        </div>
-                        <div class="perfil-div" id="name">name</div>
-                        <div class="perfil-div" id="info">info</div>
-                        <div class="perfil-div" id="info">skills</div>
-                    </section>
-                </td>
-
-                <td>
-                    <section class="sumary">
-                        <div class="summary-div" id="summary">Sumario</div>
-                        <div class="summary-div" id="experience">Experience</div>
-                    </section>
-                </td>
-            </tr>
-        </table>
-
-
-
+            <section class="right-section">
+                <div class="summary">Resumen profesional</div>
+                <div class="experience">Experiencia Laboral</div>
+            </section>
+        </div>
     </body>
 </html>
